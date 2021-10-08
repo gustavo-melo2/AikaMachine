@@ -9,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.jsp.jstl.core.Config;
 
 import br.com.dvpf.bo.CenarioBO;
 import br.com.dvpf.bo.PersonagemBO;
@@ -50,14 +49,6 @@ public class ServletController extends HttpServlet {
 		case "relacionarPersonagens":
 			try {
 				relacionarPersonagens(request);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			break;
-		case "trocarLinguagem":
-			try {
-				trocarLinguagem(request);
-				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -165,23 +156,6 @@ public class ServletController extends HttpServlet {
 		request.setAttribute("descRelacionamento", descRelacionamento);
 	}
 	
-	public void trocarLinguagem(HttpServletRequest request) throws Exception{
-		
-		String language = request.getParameter("lingua");
-		
-		Locale locale = new Locale(language);
-			
-		Config.set(request.getSession(), Config.FMT_LOCALE, locale);
-		Config.set(request.getSession(), Config.FMT_FALLBACK_LOCALE, locale);
-		
-		if(language.equals("en")) {
-			request.setAttribute("margin", "margin-left: 24.5%;" );
-		}
-		
-				
-		retorno = "index.jsp";
-		
-	}
 	
 	
 }
