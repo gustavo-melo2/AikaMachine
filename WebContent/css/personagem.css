@@ -1,0 +1,67 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal{
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 2%;
+    margin: 30px auto;
+}
+.personagens-container{
+    display: flex;
+}
+.personagem1-container, .relacionamento-container, .personagem2-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 2%;
+    text-align: center;
+}
+.relacionamento-container p{
+    margin-top: 20px ;
+}
+.relacionamento-container{
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.container-img1{
+    max-width: 250px;
+    margin: 0 auto;
+}
+.nome{
+	margin: 15px 0;
+}
+form{
+    margin-top: 100px;
+}
+form button{
+    margin: 20px 0;
+}
+.btnVoltar{
+	color: black;
+	font-size: 70px;
+	margin-left: 30px;
+}
+.btnRelacionar{
+	padding: 5px;
+	border: 1px solid #181818;
+	background-color: #181818;
+	color: white;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+.btnRelacionar:hover{
+	background-color: #ccc;
+	color: black;
+}
+@media screen and (max-width: 800px){
+    .personagens-container{
+        flex-wrap: wrap;
+    }
+    .personagem1-container, .relacionamento-container, .personagem2-container{
+        margin: 0 auto;
+    }
+
+}

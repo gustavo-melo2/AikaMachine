@@ -1,0 +1,141 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 99999;
+}
+
+.linhaTemporal{
+    width: 470px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.horizontal, .horizontal-2, .vertical{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+}
+.horizontal-2{
+    position: relative;
+    top: -21.5%;
+}
+.passado, .presente{
+    z-index: 999999;
+}
+.passado{
+    width: 210px;
+    border: 3px solid red;
+}
+.presente{
+    width: 150px;
+    border: 3px solid green;
+}
+/* .futuro{
+    width: 150px;
+    border: 3px solid #ccc;
+} */
+.espassamento{
+    position: relative;
+    top: 68px;
+    left: 200px;
+    width: 50px;
+    height: 0;
+    border: 2px dotted blue;
+}
+.espassamento1{
+    width: 50px;
+    height: 0;
+    border: 2px dotted blue;
+}
+
+
+.div1955, .div1955-duasSemanas, .div1985{
+    position: relative;
+    top: 15px;
+}
+.div1955{
+    margin-left: 2%;
+}
+.div1955-duasSemanas{
+    margin-left: 23%;
+}
+.div1985{
+    top: 56px;
+    left: -25px;
+
+}
+.traço{
+    width: 1px;
+    height: 25px;
+    border-right: 5px solid #ccc;
+    margin: 0 auto;
+}
+.div1955-duasSemanas p{
+    position: relative;
+    left: -20px;
+    top: 5px;
+}
+.div1955 p{
+	position: relative;
+	top: 7px;
+}
+.vertical-2 > .div1955-duasSemanas{
+    top: 100px;
+    text-align: center;
+    width: 200px;
+}
+.vertical-2 > .div1985{
+    top: -5px;
+    left: 30px;
+    text-align: center;
+} 
+.passado-alterado{
+    position: relative;
+    left: 110px;
+    top: -40px;
+    width: 0px;
+    height: 110px;
+    border: 5px solid red;
+    transform: skew(60deg);
+}
+.presente-alterado{
+    padding: 0;
+    height: 0;
+    position: relative;
+    left: 202px;
+    top: 68px;
+}
+
+
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    overflow: hidden;
+}
+.bg-header{
+    background-color: none !important;
+}
+
+.init{
+    background-image: url('../img/09669e70779257.5bae7ffcd469f.gif');
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.cardTimeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94%;
+}
+
+.card-style{
+    background-color: #ffff;
+    opacity: 0.85;
+    border: 3px solid #181818;
+    border-radius: 13px;
+    padding: 25px;
+}
